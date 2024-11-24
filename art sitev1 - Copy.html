@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Down By the Bay Where the Artwork Grows</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #66b2b2, #559999);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            list-style-type: none;
+        }
+        nav li {
+            float: left;
+            width: 20%;
+        }
+        nav a {
+            display: block;
+            padding: 14px 0;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+	img {width: 500px;
+	}
+        /* Content Styles */
+        .container {
+            padding: 20px;
+        }
+        .art-section {
+            margin-bottom: 60px;
+        }
+        .art-section h2 {
+            border-bottom: 2px solid #66b2b2;
+            padding-bottom: 10px;
+            color: #66b2b2;
+        }
+        .art-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .art-item {
+            background-color: white;
+            padding: 10px;
+            flex: 1 1 calc(25% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .art-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .art-item p {
+            margin: 10px 0;
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #66b2b2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .contact-button:hover {
+            background-color: #559999;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Responsive Styles */
+        @media screen and (max-width: 992px) {
+            .art-item {
+                flex: 1 1 calc(50% - 40px);
+            }
+            nav li {
+                width: 33.33%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            nav li {
+                width: 50%;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .art-item {
+                flex: 1 1 100%;
+            }
+            nav li {
+                width: 100%;
+            }
+            header {
+                padding: 40px 20px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <script>
+        // You can add JavaScript functions here if needed
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Down By the Bay<br>Where the Artwork Grows</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="sea-shells.html">Sea Shells</a></li>
+            <li><a href="bracelets.html">Bracelets</a></li>
+            <li><a href="boats.html">Boats</a></li>
+            <li><a href="necklaces.html">Necklaces</a></li>
+            <li><a href="other-art.html">Other Art</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Sea Shells Section -->
+        <div id="sea-shells" class="art-section">
+            <h2>Hand-Decorated Sea Shells</h2>
+            <div class="art-gallery">
+                <!-- Art Item -->
+                <div class="art-item">
+                    <img src="test.jpg" alt="Decorated Sea Shell 1">
+                    <p>A beautifully adorned sea shell, inspired by oceanic treasures.</p>
+                    <a href="mailto:test@test.com" class="contact-button">Inquire Now</a>
+                </div>
+                <!-- Repeat art items as needed -->
+            </div>
+        </div>
+        <!-- Bracelets Section -->
+        <div id="bracelets" class="art-section">
+            <h2>Hand-Decorated Bracelets</h2>
+            <div class="art-gallery">
+                <!-- Art Item -->
+                <div class="art-item">
+                    <img src="test.jpg" alt="Decorated Bracelet 1">
+                    <p>Unique handcrafted bracelet with intricate designs.</p>
+                    <a href="mailto:test@test.com" class="contact-button">Inquire Now</a>
+                </div>
+                <!-- Repeat art items as needed -->
+            </div>
+        </div>
+        <!-- Boats Section -->
+        <div id="boats" class="art-section">
+            <h2>Hand-Decorated Boats</h2>
+            <div class="art-gallery">
+                <!-- Art Item -->
+                <div class="art-item">
+                    <img src="test.jpg" alt="Decorated Boat 1">
+                    <p>Artistic representations of charming small boats.</p>
+                    <a href="mailto:test@test.com" class="contact-button">Inquire Now</a>
+                </div>
+                <!-- Repeat art items as needed -->
+            </div>
+        </div>
+        <!-- Necklaces Section -->
+        <div id="necklaces" class="art-section">
+            <h2>Hand-Made Necklaces</h2>
+            <div class="art-gallery">
+                <!-- Art Item -->
+                <div class="art-item">
+                    <img src="test.jpg" alt="Hand-Made Necklace 1">
+                    <p>Elegant necklaces crafted with care and creativity.</p>
+                    <a href="mailto:test@test.com" class="contact-button">Inquire Now</a>
+                </div>
+                <!-- Repeat art items as needed -->
+            </div>
+        </div>
+        <!-- Other Art Section -->
+        <div id="other-art" class="art-section">
+            <h2>Other Art</h2>
+            <div class="art-gallery">
+                <!-- Art Item -->
+                <div class="art-item">
+                    <img src="test.jpg" alt="Other Art 1">
+                    <p>Explore an array of other artistic creations we offer.</p>
+                    <a href="mailto:test@test.com" class="contact-button">Inquire Now</a>
+                </div>
+                <!-- Repeat art items as needed -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Down By the Bay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
