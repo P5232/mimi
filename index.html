@@ -1,1 +1,255 @@
-<h1>TEST</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Down By the Bay Where the Artwork Grows</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #66b2b2, #559999);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            list-style-type: none;
+        }
+        nav li {
+            float: left;
+            width: 20%;
+        }
+        nav a {
+            display: block;
+            padding: 14px 0;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        /* Content Styles */
+        .container {
+            padding: 20px;
+        }
+        .intro-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro-section img {
+            max-width: 300px; /* Adjusted to make images smaller */
+            width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+        .intro-section p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .art-section {
+            margin-bottom: 60px;
+        }
+        .art-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .art-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding-left: 50px;
+        }
+        /* Alternate layout between sections */
+        .art-section:nth-child(even) .art-item {
+            flex-direction: row-reverse;
+        }
+        .art-item-content, .art-item img {
+            flex: 1;
+            max-width: 500px;
+            margin: 0 20px;
+        }
+        /* Adjust margins for better centering */
+        .art-section:nth-child(odd) .art-item-content {
+            margin-right: 40px;
+        }
+        .art-section:nth-child(even) .art-item-content {
+            margin-left: 40px;
+        }
+        .art-item-content h2 {
+            font-size: 2em;
+            margin-top: 0;
+            color: #66b2b2;
+        }
+        .art-item-content p {
+            margin: 10px 0;
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #66b2b2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .contact-button:hover {
+            background-color: #559999;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .art-item {
+                flex-direction: column;
+                align-items: center;
+                padding-left: 25px;
+            }
+            .art-item-content, .art-item img {
+                margin: 10px 0;
+            }
+            nav li {
+                width: 50%;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .intro-section img {
+                max-width: 80%;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            nav li {
+                width: 100%;
+            }
+            header {
+                padding: 30px 20px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            .art-item {
+                padding-left: 15px;
+            }
+            .intro-section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Down By the Bay<br>Where the Artwork Grows</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="sea-shells.html">Sea Shells</a></li>
+            <li><a href="bracelets.html">Bracelets</a></li>
+            <li><a href="boats.html">Boats</a></li>
+            <li><a href="necklaces.html">Necklaces</a></li>
+            <li><a href="other-art.html">Other Art</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Intro Section with Images -->
+        <div class="intro-section">
+            <img src="home1.jpg" alt="Person selling items at a craft fair">
+            <img src="home2.jpg" alt="Table with items">
+            <p>Welcome to Down By the Bay, where handcrafted art meets the beauty of the sea.</p>
+        </div>
+        <!-- Sea Shells Section -->
+        <div id="sea-shells" class="art-section">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <div class="art-item-content">
+                        <h2>Hand-Decorated Sea Shells</h2>
+                        <p>Discover our exquisite collection of hand-decorated sea shells.</p>
+                        <a href="sea-shells.html" class="contact-button">View Gallery</a>
+                    </div>
+                    <img src="S1.jpg" alt="Hand-Decorated Sea Shell">
+                </div>
+            </div>
+        </div>
+        <!-- Bracelets Section -->
+        <div id="bracelets" class="art-section">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <div class="art-item-content">
+                        <h2>Hand-Decorated Bracelets</h2>
+                        <p>Unique handcrafted bracelets with intricate designs.</p>
+                        <a href="bracelets.html" class="contact-button">View Gallery</a>
+                    </div>
+                    <img src="br1.jpg" alt="Hand-Decorated Bracelet">
+                </div>
+            </div>
+        </div>
+        <!-- Boats Section -->
+        <div id="boats" class="art-section">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <div class="art-item-content">
+                        <h2>Hand-Decorated Boats</h2>
+                        <p>Artistic representations of charming small boats.</p>
+                        <a href="boats.html" class="contact-button">View Gallery</a>
+                    </div>
+                    <img src="b1.jpg" alt="Hand-Decorated Boat">
+                </div>
+            </div>
+        </div>
+        <!-- Necklaces Section -->
+        <div id="necklaces" class="art-section">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <div class="art-item-content">
+                        <h2>Hand-Made Necklaces</h2>
+                        <p>Elegant necklaces crafted with care and creativity.</p>
+                        <a href="necklaces.html" class="contact-button">View Gallery</a>
+                    </div>
+                    <img src="N1.jpg" alt="Hand-Made Necklace">
+                </div>
+            </div>
+        </div>
+        <!-- Other Art Section -->
+        <div id="other-art" class="art-section">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <div class="art-item-content">
+                        <h2>Other Art</h2>
+                        <p>Explore an array of other artistic creations we offer.</p>
+                        <a href="other-art.html" class="contact-button">View Gallery</a>
+                    </div>
+                    <img src="O1.jpg" alt="Other Art">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Down By the Bay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
